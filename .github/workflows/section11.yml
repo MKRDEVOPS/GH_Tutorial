@@ -5,12 +5,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Shell commands
-      run: |
-        pwd
-        ls
+        run: |
+          pwd
+          ls
       - name: Check out Actions
         uses: actions/checkout@v1
       - name:
         run: |
-        pwd
-        ls 
+          pwd
+          ls 
