@@ -1,9 +1,9 @@
 Name: Github Action Work Flow
 on: push
 
- jobs:
-   FirstWorkflow:
-   runs-on: ubuntu-latest
-   step: Shell Commands
-   run: |
-     npm version
+  jobs:
+    FirstWorkflow:
+    runs-on: ubuntu-latest
+    step: Shell Commands
+    run: |
+      npm version
