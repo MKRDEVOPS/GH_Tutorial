@@ -1,16 +1,16 @@
 name: Github Action Work Flow
-on: pull_request
+on: push
 jobs:
   FirstWorkflow:
     runs-on: ubuntu-latest
-    steps: 
-      - name: Shell Commands
+    steps:
+      - name: Shell commands
         run: |
-          npm version
-          ls 
-      - name: Sample GHAcctions
+          pwd
+          ls
+      - name: Check out Actions
         uses: actions/checkout@v1
-      - name: Shell Commands1 After Checkout
+      - name:
         run: |
-          npm version
+          pwd
           ls
