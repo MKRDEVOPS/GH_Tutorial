@@ -13,4 +13,11 @@ jobs:
       - name:
         run: |
           pwd
-          ls 
+          ls
+      - name:
+        uses: actions/hello-world-javascript-action
+        id: greet
+        with: 
+          who-to-greet: Balaji
+      - name: Greet Time
+        run: echo "${{steps.greet.outputs.time}}"
