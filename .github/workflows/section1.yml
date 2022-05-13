@@ -7,3 +7,4 @@ jobs:
       - name: Shell Commands
         run: |
           npm version
+          ls
