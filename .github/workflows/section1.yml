@@ -10,7 +10,7 @@ jobs:
           ls
       - name: Check out Actions
         uses: actions/checkout@v1
-      - name:
+      - name: LiST
         run: |
           pwd
           ls
