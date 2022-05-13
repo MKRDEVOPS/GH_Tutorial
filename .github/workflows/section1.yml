@@ -8,3 +8,9 @@ jobs:
         run: |
           npm version
           ls
+    steps: 
+      - name: Sample GHAcctions
+        uses: actions/checkout@v1
+        run: |
+          npm version
+          ls
