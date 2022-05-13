@@ -1,0 +1,16 @@
+name: Action Checkout Example
+on: push
+jobs:
+  Shell Commands:
+  runs-on: ubuntu-latest
+  steps:
+    - name: Shell commands
+      run: |
+        pwd
+        ls
+    - name: Check out Actions
+      uses: actions/checkout@v1
+    - name:
+      run: |
+        pwd
+        ls 
