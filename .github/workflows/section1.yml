@@ -10,7 +10,7 @@ jobs:
           ls 
       - name: Sample GHAcctions
         uses: actions/checkout@v1
-      - name:Shell Commands1 After Checkout
+      - name: Shell Commands1 After Checkout
         run: |
           npm version
           ls
