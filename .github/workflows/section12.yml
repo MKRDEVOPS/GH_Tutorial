@@ -11,7 +11,7 @@ jobs:
           echo $GITHUB_SHA
           echo $GITHUB_REPOSITORY
           echo $GITHUB_WORKSPACE
-          echo "${{ GITHUB_TOKEN }}"
+          echo "${{ GITHUB.TOKEN }}"
       - name: Check out Actions
         uses: actions/checkout@v1
       - name:
@@ -25,4 +25,4 @@ jobs:
           who-to-greet: Balaji
       - name: Greet Time
         run: echo "${{steps.greet.outputs.time}}"
-        
+
