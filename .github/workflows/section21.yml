@@ -1,7 +1,11 @@
 name: Action Checkout Example
 on:
-  repository_dispatch:
-    types: [build]
+
+  push:
+    branches:
+      - main
+  # repository_dispatch:
+  #   types: [build]
   # schedule:
   #  - cron: "5 * * * *"
   #push:
@@ -34,8 +38,6 @@ jobs:
           who-to-greet: Balaji
       - name: Greet Time
         run: echo "${{steps.greet.outputs.time}}"
-
-
 
 
 
