@@ -3,7 +3,7 @@ on:
 
   push:
     branches-ignore:
-      - master
+      - main
   # repository_dispatch:
   #   types: [build]
   # schedule:

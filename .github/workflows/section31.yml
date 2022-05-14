@@ -3,7 +3,7 @@ on:
 
   push:
     branches-ignore:
-      - main
+      - master
   # repository_dispatch:
   #   types: [build]
   # schedule:
@@ -38,4 +38,3 @@ jobs:
           who-to-greet: Balaji
       - name: Greet Time
         run: echo "${{steps.greet.outputs.time}}"
-        
