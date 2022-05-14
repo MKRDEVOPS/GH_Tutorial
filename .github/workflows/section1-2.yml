@@ -1,7 +1,7 @@
 name: Action Checkout Example
 on: pull_request
 jobs:
-  Shell Commands:
+  Shell_Commands:
   runs-on: ubuntu-latest
   steps:
     - name: Shell commands
