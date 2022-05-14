@@ -1,0 +1,16 @@
+name: Github Action Work Flow
+on: pull_request
+jobs:
+  FirstWorkflow:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Shell commands
+        run: |
+          pwd
+          ls
+      - name: Check out Actions
+        uses: actions/checkout@v1
+      - name: LiST
+        run: |
+          pwd
+          ls
