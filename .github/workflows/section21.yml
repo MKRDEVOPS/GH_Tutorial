@@ -2,7 +2,7 @@ name: Action Checkout Example
 on:
   schedule:
     - cron: "* * * * *"
-  push:
+  #push:
   #pull_request:
    # types: [closed,assigned,reopened,opened]
 jobs:
