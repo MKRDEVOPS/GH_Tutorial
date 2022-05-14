@@ -1,7 +1,8 @@
 name: Action Checkout Example
 on:
   push:
-  pull_request: [closed,assigned,reopened,opened]
+  pull_request:
+    types: [closed,assigned,reopened,opened]
 jobs:
   Shell_Commands:
     runs-on: ubuntu-latest
