@@ -1,7 +1,7 @@
 name: Action Checkout Example
 on:
   schedule:
-    - cron: "* * * * *"
+    - cron: "1 * * * *"
   #push:
   pull_request:
     types: [closed,assigned,reopened,opened]
