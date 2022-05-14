@@ -11,6 +11,8 @@ jobs:
   Shell_Commands:
     runs-on: ubuntu-latest
     steps:
+      - name: Payload
+        run: echo "${{github.event.client_payload.env }}"
       - name: Shell_commands
         run: |
           pwd
