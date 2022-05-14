@@ -1,0 +1,27 @@
+name: Action Checkout Example
+on: push
+jobs:
+  Shell_Commands:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Shell_commands
+        run: |
+          pwd
+          ls
+          echo $GITHUB_SHA
+          echo $GITHUB_REPOSITORY
+          echo $GITHUB_WORKSPACE
+          echo "${{ GITHUB_TOKEN }}"
+      - name: Check out Actions
+        uses: actions/checkout@v1
+      - name:
+        run: |
+          pwd
+          ls
+      - name: JS Actions
+        uses: actions/hello-world-javascript-action@v1
+        id: greet
+        with: 
+          who-to-greet: Balaji
+      - name: Greet Time
+        run: echo "${{steps.greet.outputs.time}}"
