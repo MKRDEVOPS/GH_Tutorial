@@ -1,7 +1,9 @@
 name: Action Checkout Example
 on:
-  schedule:
-    - cron: "5 * * * *"
+  repository_dispatch:
+    types: [build]
+  # schedule:
+  #  - cron: "5 * * * *"
   #push:
   #pull_request:
    # types: [closed,assigned,reopened,opened]
