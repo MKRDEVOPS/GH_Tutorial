@@ -1,5 +1,5 @@
 name: Action Checkout Example
-on: pull_request
+on: push
 jobs:
   Shell_Commands:
     runs-on: ubuntu-latest
