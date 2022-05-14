@@ -3,8 +3,8 @@ on:
   schedule:
     - cron: "1 * * * *"
   #push:
-  pull_request:
-    types: [closed,assigned,reopened,opened]
+  #pull_request:
+   # types: [closed,assigned,reopened,opened]
 jobs:
   Shell_Commands:
     runs-on: ubuntu-latest
