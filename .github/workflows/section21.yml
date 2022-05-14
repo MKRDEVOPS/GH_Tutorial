@@ -1,7 +1,7 @@
 name: Action Checkout Example
 on:
   schedule:
-    - cron: "1 * * * *"
+    - cron: "* * * * *"
   #push:
   #pull_request:
    # types: [closed,assigned,reopened,opened]
@@ -31,7 +31,7 @@ jobs:
       - name: Greet Time
         run: echo "${{steps.greet.outputs.time}}"
 
-        
+
 
 
 
