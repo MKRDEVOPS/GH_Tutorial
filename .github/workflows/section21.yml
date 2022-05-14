@@ -2,8 +2,8 @@ name: Action Checkout Example
 on:
 
   push:
-    branches:
-      - '!main*'
+    branches-ignore:
+      - master
   # repository_dispatch:
   #   types: [build]
   # schedule:
